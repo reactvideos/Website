@@ -1,0 +1,244 @@
+Started on 2016-02-02 14:31:08 - 2016 Feb 02
+
+Checking File ....
+File : /var/www/html/files/conversion_queue/14544414685a542.mp4
+File Exists : Yes
+
+Preparing file...
+format : mov,mp4,m4a,3gp,3g2,mj2
+duration : 0
+size : 2107842
+bitrate : 1248721
+video_width : 1280
+video_height : 720
+video_wh_ratio : 1.7777777777778
+video_codec : h264
+video_rate : 25
+video_bitrate : 862991
+video_color : N/A
+audio_codec : aac
+audio_bitrate : 381988
+audio_rate : 48000
+audio_channels : 6
+path : /var/www/html/files/conversion_queue/14544414685a542.mp4
+rotation : 0
+
+======Converting Video=========
+
+ Starting : Thumbs Generation 
+
+
+=======Low Resolution Conversion=======
+
+
+ Sarting : Generating Low resolution video @ 2016-02-02 14:31:09 
+
+ Converting Video SD File  
+
+ Command : /usr/bin/ffmpeg -i /var/www/html/files/conversion_queue/14544414685a542.mp4 -acodec libmp3lame -s 1280x720 -preset medium -f mp4 -b:v 300000 -minrate 300000 -maxrate 300000 -b:a 128000 -minrate 128000 -maxrate 128000 -r 25 -ar 22050 /var/www/html/files/videos/2016/02/02/14544414685a542-sd.mp4 
+
+ ffmpeg output : ffmpeg version 2.7.5-0ubuntu0.15.10.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 5.2.1 (Ubuntu 5.2.1-22ubuntu2) 20151010
+  configuration: --prefix=/usr --extra-version=0ubuntu0.15.10.1 --build-suffix=-ffmpeg --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --enable-shared --disable-stripping --enable-avresample --enable-avisynth --enable-frei0r --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libopenjpeg --enable-openal --enable-libopus --enable-libpulse --enable-librtmp --enable-libschroedinger --enable-libshine --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libxvid --enable-libzvbi --enable-opengl --enable-x11grab --enable-libdc1394 --enable-libiec61883 --enable-libzmq --enable-libssh --enable-libsoxr --enable-libx264 --enable-libopencv --enable-libx265
+  libavutil      54. 27.100 / 54. 27.100
+  libavcodec     56. 41.100 / 56. 41.100
+  libavformat    56. 36.100 / 56. 36.100
+  libavdevice    56.  4.100 / 56.  4.100
+  libavfilter     5. 16.101 /  5. 16.101
+  libavresample   2.  1.  0 /  2.  1.  0
+  libswscale      3.  1.101 /  3.  1.101
+  libswresample   1.  2.100 /  1.  2.100
+  libpostproc    53.  3.100 / 53.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/html/files/conversion_queue/14544414685a542.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    creation_time   : 1970-01-01 00:00:00
+    encoder         : Lavf53.24.2
+  Duration: 00:00:13.50, start: 0.000000, bitrate: 1248 kb/s
+    Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 862 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, 5.1, fltp, 381 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : SoundHandler
+[libx264 @ 0xbf1060] VBV maxrate specified, but no bufsize, ignored
+[libx264 @ 0xbf1060] using SAR=1/1
+[libx264 @ 0xbf1060] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0xbf1060] profile High, level 3.1
+[libx264 @ 0xbf1060] 264 - core 146 r2555 0c21480 - H.264/MPEG-4 AVC codec - Copyleft 2003-2015 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=abr mbtree=1 bitrate=300 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/html/files/videos/2016/02/02/14544414685a542-sd.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.36.100
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], q=-1--1, 300 kb/s, 25 fps, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : VideoHandler
+      encoder         : Lavc56.41.100 libx264
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 22050 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : SoundHandler
+      encoder         : Lavc56.41.100 libmp3lame
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+frame=   41 fps=0.0 q=0.0 size=       0kB time=00:00:01.51 bitrate=   0.3kbits/s    frame=   44 fps= 43 q=51.0 size=      26kB time=00:00:01.64 bitrate= 128.1kbits/s    frame=   54 fps= 35 q=53.0 size=      35kB time=00:00:02.06 bitrate= 138.4kbits/s    frame=   62 fps= 29 q=47.0 size=      47kB time=00:00:02.37 bitrate= 160.6kbits/s    frame=   69 fps= 25 q=47.0 size=      58kB time=00:00:02.66 bitrate= 178.7kbits/s    frame=   76 fps= 23 q=46.0 size=      70kB time=00:00:02.92 bitrate= 195.3kbits/s    frame=   82 fps= 22 q=46.0 size=      84kB time=00:00:03.16 bitrate= 217.1kbits/s    frame=   89 fps= 20 q=46.0 size=      98kB time=00:00:03.45 bitrate= 233.8kbits/s    frame=   97 fps= 20 q=45.0 size=     114kB time=00:00:03.76 bitrate= 248.5kbits/s    frame=  105 fps= 19 q=45.0 size=     128kB time=00:00:04.07 bitrate= 256.8kbits/s    frame=  114 fps= 19 q=44.0 size=     143kB time=00:00:04.44 bitrate= 263.7kbits/s    frame=  123 fps= 19 q=44.0 size=     158kB time=00:00:04.83 bitrate= 267.2kbits/s    frame=  134 fps= 19 q=43.0 size=     175kB time=00:00:05.25 bitrate= 273.7kbits/s    frame=  145 fps= 19 q=42.0 size=     192kB time=00:00:05.69 bitrate= 276.0kbits/s    frame=  156 fps= 19 q=42.0 size=     216kB time=00:00:06.14 bitrate= 288.3kbits/s    frame=  166 fps= 19 q=42.0 size=     232kB time=00:00:06.53 bitrate= 290.3kbits/s    frame=  175 fps= 19 q=42.0 size=     250kB time=00:00:06.89 bitrate= 296.8kbits/s    frame=  185 fps= 19 q=42.0 size=     273kB time=00:00:07.29 bitrate= 306.2kbits/s    frame=  195 fps= 19 q=41.0 size=     289kB time=00:00:07.68 bitrate= 307.7kbits/s    frame=  205 fps= 19 q=41.0 size=     309kB time=00:00:08.10 bitrate= 312.4kbits/s    frame=  214 fps= 19 q=42.0 size=     334kB time=00:00:08.46 bitrate= 322.8kbits/s    frame=  224 fps= 19 q=42.0 size=     363kB time=00:00:08.83 bitrate= 337.0kbits/s    frame=  234 fps= 19 q=43.0 size=     388kB time=00:00:09.24 bitrate= 344.0kbits/s    frame=  245 fps= 19 q=43.0 size=     417kB time=00:00:09.69 bitrate= 352.4kbits/s    frame=  256 fps= 19 q=44.0 size=     447kB time=00:00:10.11 bitrate= 361.9kbits/s    frame=  275 fps= 20 q=42.0 size=     461kB time=00:00:10.89 bitrate= 346.5kbits/s    frame=  290 fps= 20 q=40.0 size=     475kB time=00:00:11.49 bitrate= 338.7kbits/s    frame=  305 fps= 21 q=40.0 size=     496kB time=00:00:12.09 bitrate= 335.9kbits/s    frame=  319 fps= 21 q=39.0 size=     521kB time=00:00:12.67 bitrate= 336.9kbits/s    frame=  332 fps= 21 q=39.0 size=     539kB time=00:00:13.16 bitrate= 335.3kbits/s    frame=  337 fps= 20 q=37.0 Lsize=     629kB time=00:00:13.50 bitrate= 381.2kbits/s    
+video:404kB audio:212kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.048397%
+[libx264 @ 0xbf1060] frame I:3     Avg QP:29.18  size: 19513
+[libx264 @ 0xbf1060] frame P:189   Avg QP:34.79  size:  1596
+[libx264 @ 0xbf1060] frame B:145   Avg QP:41.42  size:   366
+[libx264 @ 0xbf1060] consecutive B-frames: 41.5%  0.0%  9.8% 48.7%
+[libx264 @ 0xbf1060] mb I  I16..4: 46.0% 46.8%  7.2%
+[libx264 @ 0xbf1060] mb P  I16..4:  1.3%  1.0%  0.0%  P16..4: 14.7%  0.7%  0.4%  0.0%  0.0%    skip:81.9%
+[libx264 @ 0xbf1060] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 10.4%  0.1%  0.0%  direct: 0.0%  skip:89.5%  L0:34.5% L1:65.4% BI: 0.1%
+[libx264 @ 0xbf1060] final ratefactor: 35.39
+[libx264 @ 0xbf1060] 8x8 transform intra:44.9% inter:92.4%
+[libx264 @ 0xbf1060] coded y,uvDC,uvAC intra: 20.1% 37.6% 6.5% inter: 1.2% 1.6% 0.0%
+[libx264 @ 0xbf1060] i16 v,h,dc,p: 30% 33%  9% 28%
+[libx264 @ 0xbf1060] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 12% 41%  5%  5%  5%  4%  6%  4%
+[libx264 @ 0xbf1060] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 14% 16% 10%  9%  8%  6%  9%  5%
+[libx264 @ 0xbf1060] i8c dc,h,v,p: 71% 15% 12%  2%
+[libx264 @ 0xbf1060] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0xbf1060] ref P L0: 71.8% 14.6% 10.7%  2.8%
+[libx264 @ 0xbf1060] ref B L0: 95.6%  3.7%  0.7%
+[libx264 @ 0xbf1060] ref B L1: 95.4%  4.6%
+[libx264 @ 0xbf1060] kb/s:245.20
+ 
+
+ outputFile : /var/www/html/files/videos/2016/02/02/14544414685a542-sd.mp4 
+
+ Sarting : MP4Box Conversion for SD 
+
+ MP4Box Command : /usr/bin/MP4Box -inter 0.5 /var/www/html/files/videos/2016/02/02/14544414685a542-sd.mp4  -tmp /var/www/html/files/temp 
+
+ output : Saving /var/www/html/files/videos/2016/02/02/14544414685a542-sd.mp4: 0.001 secs Interleaving
+ISO File Writing: |                    | (01/100)ISO File Writing: |                    | (02/100)ISO File Writing: |                    | (03/100)ISO File Writing: |                    | (04/100)ISO File Writing: |=                   | (05/100)ISO File Writing: |=                   | (06/100)ISO File Writing: |=                   | (07/100)ISO File Writing: |=                   | (08/100)ISO File Writing: |=                   | (09/100)ISO File Writing: |==                  | (10/100)ISO File Writing: |==                  | (11/100)ISO File Writing: |==                  | (12/100)ISO File Writing: |==                  | (13/100)ISO File Writing: |==                  | (14/100)ISO File Writing: |===                 | (15/100)ISO File Writing: |===                 | (16/100)ISO File Writing: |===                 | (17/100)ISO File Writing: |===                 | (18/100)ISO File Writing: |===                 | (19/100)ISO File Writing: |====                | (20/100)ISO File Writing: |====                | (21/100)ISO File Writing: |====                | (22/100)ISO File Writing: |====                | (23/100)ISO File Writing: |====                | (24/100)ISO File Writing: |=====               | (25/100)ISO File Writing: |=====               | (26/100)ISO File Writing: |=====               | (27/100)ISO File Writing: |=====               | (28/100)ISO File Writing: |=====               | (29/100)ISO File Writing: |======              | (30/100)ISO File Writing: |======              | (31/100)ISO File Writing: |======              | (32/100)ISO File Writing: |======              | (33/100)ISO File Writing: |======              | (34/100)ISO File Writing: |=======             | (35/100)ISO File Writing: |=======             | (36/100)ISO File Writing: |=======             | (37/100)ISO File Writing: |=======             | (38/100)ISO File Writing: |=======             | (39/100)ISO File Writing: |========            | (40/100)ISO File Writing: |========            | (41/100)ISO File Writing: |========            | (42/100)ISO File Writing: |========            | (43/100)ISO File Writing: |========            | (44/100)ISO File Writing: |=========           | (45/100)ISO File Writing: |=========           | (46/100)ISO File Writing: |=========           | (47/100)ISO File Writing: |=========           | (48/100)ISO File Writing: |=========           | (49/100)ISO File Writing: |==========          | (50/100)ISO File Writing: |==========          | (51/100)ISO File Writing: |==========          | (52/100)ISO File Writing: |==========          | (53/100)ISO File Writing: |==========          | (54/100)ISO File Writing: |===========         | (55/100)ISO File Writing: |===========         | (56/100)ISO File Writing: |===========         | (57/100)ISO File Writing: |===========         | (58/100)ISO File Writing: |===========         | (59/100)ISO File Writing: |============        | (60/100)ISO File Writing: |============        | (61/100)ISO File Writing: |============        | (62/100)ISO File Writing: |============        | (63/100)ISO File Writing: |============        | (64/100)ISO File Writing: |=============       | (65/100)ISO File Writing: |=============       | (66/100)ISO File Writing: |=============       | (67/100)ISO File Writing: |=============       | (68/100)ISO File Writing: |=============       | (69/100)ISO File Writing: |==============      | (70/100)ISO File Writing: |==============      | (71/100)ISO File Writing: |==============      | (72/100)ISO File Writing: |==============      | (73/100)ISO File Writing: |==============      | (74/100)ISO File Writing: |===============     | (75/100)ISO File Writing: |===============     | (76/100)ISO File Writing: |===============     | (77/100)ISO File Writing: |===============     | (78/100)ISO File Writing: |===============     | (79/100)ISO File Writing: |================    | (80/100)ISO File Writing: |================    | (81/100)ISO File Writing: |================    | (82/100)ISO File Writing: |================    | (83/100)ISO File Writing: |================    | (84/100)ISO File Writing: |=================   | (85/100)ISO File Writing: |=================   | (86/100)ISO File Writing: |=================   | (87/100)ISO File Writing: |=================   | (88/100)ISO File Writing: |=================   | (89/100)ISO File Writing: |==================  | (90/100)ISO File Writing: |==================  | (91/100)ISO File Writing: |==================  | (92/100)ISO File Writing: |==================  | (93/100)ISO File Writing: |==================  | (94/100)ISO File Writing: |=================== | (95/100)ISO File Writing: |=================== | (96/100)ISO File Writing: |=================== | (97/100)ISO File Writing: |=================== | (98/100)ISO File Writing: |=================== | (99/100)                                                         
+
+ Conversion Status : Successful @ 2016-02-02 14:31:26 
+
+
+=======High Resolution Conversion=======
+
+
+ Sarting : Generating high resolution video @ 2016-02-02 14:31:26
+
+ Converting Video HD File   
+
+ Command : /usr/bin/ffmpeg -i /var/www/html/files/conversion_queue/14544414685a542.mp4 -acodec libmp3lame -s 1280x720 -preset slow -f mp4 -b:v 0 -minrate 0 -maxrate 0 -b:a 128000 -minrate 128000 -maxrate 128000 -r 25 -ar 22050 /var/www/html/files/videos/2016/02/02/14544414685a542-hd.mp4 > /var/www/html/files/temp/14544414685a542.tmp 
+
+ ffmpeg output : ffmpeg version 2.7.5-0ubuntu0.15.10.1 Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 5.2.1 (Ubuntu 5.2.1-22ubuntu2) 20151010
+  configuration: --prefix=/usr --extra-version=0ubuntu0.15.10.1 --build-suffix=-ffmpeg --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --enable-shared --disable-stripping --enable-avresample --enable-avisynth --enable-frei0r --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libopenjpeg --enable-openal --enable-libopus --enable-libpulse --enable-librtmp --enable-libschroedinger --enable-libshine --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libxvid --enable-libzvbi --enable-opengl --enable-x11grab --enable-libdc1394 --enable-libiec61883 --enable-libzmq --enable-libssh --enable-libsoxr --enable-libx264 --enable-libopencv --enable-libx265
+  libavutil      54. 27.100 / 54. 27.100
+  libavcodec     56. 41.100 / 56. 41.100
+  libavformat    56. 36.100 / 56. 36.100
+  libavdevice    56.  4.100 / 56.  4.100
+  libavfilter     5. 16.101 /  5. 16.101
+  libavresample   2.  1.  0 /  2.  1.  0
+  libswscale      3.  1.101 /  3.  1.101
+  libswresample   1.  2.100 /  1.  2.100
+  libpostproc    53.  3.100 / 53.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/html/files/conversion_queue/14544414685a542.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    creation_time   : 1970-01-01 00:00:00
+    encoder         : Lavf53.24.2
+  Duration: 00:00:13.50, start: 0.000000, bitrate: 1248 kb/s
+    Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 862 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, 5.1, fltp, 381 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : SoundHandler
+[libx264 @ 0x93c060] VBV maxrate specified, but no bufsize, ignored
+[libx264 @ 0x93c060] using SAR=1/1
+[libx264 @ 0x93c060] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x93c060] profile High, level 3.1
+[libx264 @ 0x93c060] 264 - core 146 r2555 0c21480 - H.264/MPEG-4 AVC codec - Copyleft 2003-2015 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=umh subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/html/files/videos/2016/02/02/14544414685a542-hd.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.36.100
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], q=-1--1, max. 128 kb/s, 25 fps, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : VideoHandler
+      encoder         : Lavc56.41.100 libx264
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 22050 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : SoundHandler
+      encoder         : Lavc56.41.100 libmp3lame
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+frame=   47 fps=0.0 q=0.0 size=       0kB time=00:00:01.77 bitrate=   0.2kbits/s    frame=   52 fps= 30 q=28.0 size=     112kB time=00:00:01.98 bitrate= 463.6kbits/s    frame=   57 fps= 25 q=28.0 size=     134kB time=00:00:02.17 bitrate= 504.9kbits/s    frame=   60 fps= 22 q=28.0 size=     153kB time=00:00:02.30 bitrate= 544.0kbits/s    frame=   64 fps= 18 q=28.0 size=     186kB time=00:00:02.43 bitrate= 627.2kbits/s    frame=   68 fps= 15 q=28.0 size=     225kB time=00:00:02.61 bitrate= 705.3kbits/s    frame=   72 fps= 14 q=28.0 size=     268kB time=00:00:02.77 bitrate= 792.8kbits/s    frame=   76 fps= 12 q=28.0 size=     314kB time=00:00:02.92 bitrate= 880.0kbits/s    frame=   80 fps= 12 q=28.0 size=     360kB time=00:00:03.08 bitrate= 955.3kbits/s    frame=   84 fps= 11 q=28.0 size=     377kB time=00:00:03.26 bitrate= 945.0kbits/s    frame=   87 fps= 11 q=28.0 size=     408kB time=00:00:03.37 bitrate= 990.4kbits/s    frame=   89 fps= 10 q=28.0 size=     438kB time=00:00:03.45 bitrate=1040.3kbits/s    frame=   91 fps=9.8 q=28.0 size=     470kB time=00:00:03.52 bitrate=1090.9kbits/s    frame=   94 fps=9.4 q=28.0 size=     509kB time=00:00:03.65 bitrate=1139.4kbits/s    frame=   97 fps=9.1 q=28.0 size=     550kB time=00:00:03.76 bitrate=1197.9kbits/s    frame=  101 fps=8.8 q=28.0 size=     597kB time=00:00:03.94 bitrate=1238.5kbits/s    frame=  105 fps=8.4 q=28.0 size=     641kB time=00:00:04.07 bitrate=1286.9kbits/s    frame=  109 fps=8.3 q=28.0 size=     657kB time=00:00:04.26 bitrate=1262.7kbits/s    frame=  111 fps=8.2 q=28.0 size=     689kB time=00:00:04.33 bitrate=1300.2kbits/s    frame=  114 fps=8.0 q=28.0 size=     723kB time=00:00:04.44 bitrate=1333.4kbits/s    frame=  118 fps=7.9 q=28.0 size=     763kB time=00:00:04.62 bitrate=1350.7kbits/s    frame=  122 fps=7.8 q=28.0 size=     803kB time=00:00:04.75 bitrate=1382.5kbits/s    frame=  126 fps=7.7 q=28.0 size=     843kB time=00:00:04.93 bitrate=1398.1kbits/s    frame=  130 fps=7.6 q=28.0 size=     881kB time=00:00:05.09 bitrate=1415.6kbits/s    frame=  135 fps=7.5 q=28.0 size=     916kB time=00:00:05.30 bitrate=1415.2kbits/s    frame=  140 fps=7.6 q=28.0 size=     944kB time=00:00:05.48 bitrate=1409.8kbits/s    frame=  146 fps=7.6 q=28.0 size=     968kB time=00:00:05.72 bitrate=1385.3kbits/s    frame=  151 fps=7.7 q=28.0 size=     986kB time=00:00:05.93 bitrate=1361.8kbits/s    frame=  156 fps=7.7 q=28.0 size=    1011kB time=00:00:06.14 bitrate=1348.1kbits/s    frame=  160 fps=7.7 q=28.0 size=    1035kB time=00:00:06.27 bitrate=1352.4kbits/s    frame=  164 fps=7.7 q=28.0 size=    1065kB time=00:00:06.45 bitrate=1351.4kbits/s    frame=  168 fps=7.7 q=28.0 size=    1096kB time=00:00:06.61 bitrate=1358.1kbits/s    frame=  172 fps=7.7 q=28.0 size=    1115kB time=00:00:06.76 bitrate=1349.4kbits/s    frame=  177 fps=7.7 q=28.0 size=    1131kB time=00:00:06.97 bitrate=1327.5kbits/s    frame=  182 fps=7.8 q=28.0 size=    1157kB time=00:00:07.18 bitrate=1318.4kbits/s    frame=  186 fps=7.7 q=28.0 size=    1190kB time=00:00:07.31 bitrate=1332.6kbits/s    frame=  190 fps=7.7 q=28.0 size=    1223kB time=00:00:07.47 bitrate=1340.5kbits/s    frame=  194 fps=7.7 q=28.0 size=    1249kB time=00:00:07.65 bitrate=1336.0kbits/s    frame=  199 fps=7.7 q=28.0 size=    1265kB time=00:00:07.86 bitrate=1317.9kbits/s    frame=  203 fps=7.7 q=28.0 size=    1285kB time=00:00:08.02 bitrate=1312.3kbits/s    frame=  207 fps=7.7 q=28.0 size=    1306kB time=00:00:08.17 bitrate=1307.8kbits/s    frame=  212 fps=7.7 q=28.0 size=    1328kB time=00:00:08.38 bitrate=1296.8kbits/s    frame=  216 fps=7.7 q=28.0 size=    1356kB time=00:00:08.51 bitrate=1304.3kbits/s    frame=  220 fps=7.7 q=28.0 size=    1387kB time=00:00:08.70 bitrate=1305.7kbits/s    frame=  223 fps=7.7 q=28.0 size=    1425kB time=00:00:08.83 bitrate=1321.9kbits/s    frame=  228 fps=7.7 q=28.0 size=    1453kB time=00:00:09.01 bitrate=1320.5kbits/s    frame=  232 fps=7.7 q=28.0 size=    1486kB time=00:00:09.17 bitrate=1327.5kbits/s    frame=  237 fps=7.7 q=28.0 size=    1523kB time=00:00:09.38 bitrate=1329.8kbits/s    frame=  240 fps=7.7 q=28.0 size=    1561kB time=00:00:09.51 bitrate=1344.7kbits/s    frame=  244 fps=7.7 q=28.0 size=    1593kB time=00:00:09.66 bitrate=1349.5kbits/s    frame=  248 fps=7.7 q=28.0 size=    1627kB time=00:00:09.79 bitrate=1360.3kbits/s    frame=  253 fps=7.7 q=28.0 size=    1662kB time=00:00:10.00 bitrate=1360.6kbits/s    frame=  258 fps=7.7 q=28.0 size=    1693kB time=00:00:10.21 bitrate=1357.9kbits/s    frame=  267 fps=7.8 q=28.0 size=    1755kB time=00:00:10.58 bitrate=1358.9kbits/s    frame=  281 fps=8.1 q=28.0 size=    1768kB time=00:00:11.13 bitrate=1301.1kbits/s    frame=  294 fps=8.4 q=28.0 size=    1784kB time=00:00:11.65 bitrate=1254.4kbits/s    frame=  305 fps=8.6 q=28.0 size=    1804kB time=00:00:12.09 bitrate=1221.7kbits/s    frame=  313 fps=8.7 q=28.0 size=    1823kB time=00:00:12.41 bitrate=1203.5kbits/s    frame=  320 fps=8.7 q=28.0 size=    1844kB time=00:00:12.67 bitrate=1192.2kbits/s    frame=  326 fps=8.8 q=28.0 size=    1866kB time=00:00:12.93 bitrate=1181.7kbits/s    frame=  331 fps=8.8 q=28.0 size=    1880kB time=00:00:13.14 bitrate=1172.1kbits/s    frame=  337 fps=8.2 q=28.0 Lsize=    2063kB time=00:00:13.50 bitrate=1251.2kbits/s    
+video:1838kB audio:212kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.623124%
+[libx264 @ 0x93c060] frame I:3     Avg QP:15.96  size: 68001
+[libx264 @ 0x93c060] frame P:189   Avg QP:20.53  size:  7260
+[libx264 @ 0x93c060] frame B:145   Avg QP:26.10  size:  2108
+[libx264 @ 0x93c060] consecutive B-frames: 37.7% 10.7% 12.5% 39.2%
+[libx264 @ 0x93c060] mb I  I16..4: 30.8% 32.8% 36.4%
+[libx264 @ 0x93c060] mb P  I16..4:  1.0%  1.4%  0.2%  P16..4: 24.9%  6.0%  3.0%  0.0%  0.0%    skip:63.5%
+[libx264 @ 0x93c060] mb B  I16..4:  0.1%  0.2%  0.0%  B16..8: 33.2%  1.5%  0.2%  direct: 0.4%  skip:64.4%  L0:49.3% L1:47.7% BI: 3.0%
+[libx264 @ 0x93c060] 8x8 transform intra:46.6% inter:58.6%
+[libx264 @ 0x93c060] direct mvs  spatial:99.3% temporal:0.7%
+[libx264 @ 0x93c060] coded y,uvDC,uvAC intra: 48.4% 65.0% 21.8% inter: 6.8% 9.5% 0.5%
+[libx264 @ 0x93c060] i16 v,h,dc,p: 27% 34% 11% 28%
+[libx264 @ 0x93c060] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 14% 17%  5%  8% 10%  8%  9% 10%
+[libx264 @ 0x93c060] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15%  9%  6%  9% 11% 12% 10% 15% 12%
+[libx264 @ 0x93c060] i8c dc,h,v,p: 43% 24% 20% 12%
+[libx264 @ 0x93c060] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x93c060] ref P L0: 77.5% 10.3%  9.4%  1.5%  0.9%  0.4%
+[libx264 @ 0x93c060] ref B L0: 95.2%  4.0%  0.6%  0.1%
+[libx264 @ 0x93c060] ref B L1: 97.3%  2.7%
+[libx264 @ 0x93c060] kb/s:1116.80
+ 
+
+ Sarting : MP4Box Conversion for HD 
+
+ MP4Box Command : /usr/bin/MP4Box -inter 0.5 /var/www/html/files/videos/2016/02/02/14544414685a542-hd.mp4  -tmp /var/www/html/files/temp 
+
+ output : Saving /var/www/html/files/videos/2016/02/02/14544414685a542-hd.mp4: 0.001 secs Interleaving
+ISO File Writing: |                    | (01/100)ISO File Writing: |                    | (02/100)ISO File Writing: |                    | (03/100)ISO File Writing: |                    | (04/100)ISO File Writing: |=                   | (05/100)ISO File Writing: |=                   | (06/100)ISO File Writing: |=                   | (07/100)ISO File Writing: |=                   | (08/100)ISO File Writing: |=                   | (09/100)ISO File Writing: |==                  | (10/100)ISO File Writing: |==                  | (11/100)ISO File Writing: |==                  | (12/100)ISO File Writing: |==                  | (13/100)ISO File Writing: |==                  | (14/100)ISO File Writing: |===                 | (15/100)ISO File Writing: |===                 | (16/100)ISO File Writing: |===                 | (17/100)ISO File Writing: |===                 | (18/100)ISO File Writing: |===                 | (19/100)ISO File Writing: |====                | (20/100)ISO File Writing: |====                | (21/100)ISO File Writing: |====                | (22/100)ISO File Writing: |====                | (23/100)ISO File Writing: |====                | (24/100)ISO File Writing: |=====               | (25/100)ISO File Writing: |=====               | (26/100)ISO File Writing: |=====               | (27/100)ISO File Writing: |=====               | (28/100)ISO File Writing: |=====               | (29/100)ISO File Writing: |======              | (30/100)ISO File Writing: |======              | (31/100)ISO File Writing: |======              | (32/100)ISO File Writing: |======              | (33/100)ISO File Writing: |======              | (34/100)ISO File Writing: |=======             | (35/100)ISO File Writing: |=======             | (36/100)ISO File Writing: |=======             | (37/100)ISO File Writing: |=======             | (38/100)ISO File Writing: |=======             | (39/100)ISO File Writing: |========            | (40/100)ISO File Writing: |========            | (41/100)ISO File Writing: |========            | (42/100)ISO File Writing: |========            | (43/100)ISO File Writing: |========            | (44/100)ISO File Writing: |=========           | (45/100)ISO File Writing: |=========           | (46/100)ISO File Writing: |=========           | (47/100)ISO File Writing: |=========           | (48/100)ISO File Writing: |=========           | (49/100)ISO File Writing: |==========          | (50/100)ISO File Writing: |==========          | (51/100)ISO File Writing: |==========          | (52/100)ISO File Writing: |==========          | (53/100)ISO File Writing: |==========          | (54/100)ISO File Writing: |===========         | (55/100)ISO File Writing: |===========         | (56/100)ISO File Writing: |===========         | (57/100)ISO File Writing: |===========         | (58/100)ISO File Writing: |===========         | (59/100)ISO File Writing: |============        | (60/100)ISO File Writing: |============        | (61/100)ISO File Writing: |============        | (62/100)ISO File Writing: |============        | (63/100)ISO File Writing: |============        | (64/100)ISO File Writing: |=============       | (65/100)ISO File Writing: |=============       | (66/100)ISO File Writing: |=============       | (67/100)ISO File Writing: |=============       | (68/100)ISO File Writing: |=============       | (69/100)ISO File Writing: |==============      | (70/100)ISO File Writing: |==============      | (71/100)ISO File Writing: |==============      | (72/100)ISO File Writing: |==============      | (73/100)ISO File Writing: |==============      | (74/100)ISO File Writing: |===============     | (75/100)ISO File Writing: |===============     | (76/100)ISO File Writing: |===============     | (77/100)ISO File Writing: |===============     | (78/100)ISO File Writing: |===============     | (79/100)ISO File Writing: |================    | (80/100)ISO File Writing: |================    | (81/100)ISO File Writing: |================    | (82/100)ISO File Writing: |================    | (83/100)ISO File Writing: |================    | (84/100)ISO File Writing: |=================   | (85/100)ISO File Writing: |=================   | (86/100)ISO File Writing: |=================   | (87/100)ISO File Writing: |=================   | (88/100)ISO File Writing: |=================   | (89/100)ISO File Writing: |==================  | (90/100)ISO File Writing: |==================  | (91/100)ISO File Writing: |==================  | (92/100)ISO File Writing: |==================  | (93/100)ISO File Writing: |==================  | (94/100)ISO File Writing: |=================== | (95/100)ISO File Writing: |=================== | (96/100)ISO File Writing: |=================== | (97/100)ISO File Writing: |=================== | (98/100)ISO File Writing: |=================== | (99/100)                                                         
+
+ Conversion Status : Successful @ 2016-02-02 14:32:08
+
+
+output_format : mov,mp4,m4a,3gp,3g2,mj2
+output_duration : 0
+output_size : 2107842
+output_bitrate : 1248721
+output_video_width : 1280
+output_video_height : 720
+output_video_wh_ratio : 1.7777777777778
+output_video_codec : h264
+output_video_rate : 25
+output_video_bitrate : 862991
+output_video_color : N/A
+output_audio_codec : aac
+output_audio_bitrate : 381988
+output_audio_rate : 48000
+output_audio_channels : 6
+output_path : /var/www/html/files/conversion_queue/14544414685a542.mp4
+output_rotation : 0
+
+
+Time Took : 59.5919 seconds
+
+conversion_status : completed
